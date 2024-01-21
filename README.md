@@ -29,12 +29,15 @@ Run the following command to parse cron expression:
     java ProjectCronExpression\src\MainClass.java "CRON_EXPRESSION"
 
 For example:
-   java ProjectCronExpression\src\MainClass.java "*/10 0 1,7 * 2-6 /user/local/msdn.sh"
+
+       java ProjectCronExpression\src\MainClass.java "*/10 0 1,7 * 2-6 /user/local/msdn.sh"
 
 For Running the unit tests cases
 
 First Compile
-    javac -cp junit-4.12.jar;. ProjectCronExpression\src\Test1.java
+
+        javac -cp junit-4.12.jar;. ProjectCronExpression\src\Test1.java
     
 To Execute 
-    java -cp junit-4.12.jar;hamcrest.jar;. org.junit.runner.JUnitCore ProjectCronExpression\src\Test1
+
+        java -cp junit-4.12.jar;hamcrest.jar;. org.junit.runner.JUnitCore ProjectCronExpression\src\Test1
