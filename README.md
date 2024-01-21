@@ -19,18 +19,21 @@ Unsupported features or features for future development:
     
 Note that the weekdays numbering starts from 0 and the first weekday is Sunday
 
-Your system should have java with version >= 11.0.13 & Java(TM) SE Runtime Environment >= 18.9
+Your system should have java with version >= 11.0.13 
 
-<h1>Running the parser</h1> (Given the Main.jar file which can be used to run the cron Expression if you have java SE >=18.9)
+<h1>Running the parser</h1> 
 
-How to <a href="https://help.eclipse.org/latest/index.jsp?topic=%2Forg.eclipse.jdt.doc.user%2Ftasks%2Ftasks-37.htm"> create </a> the Jar file using Eclipse.
-
-Also please <a href="https://www.tutorialspoint.com/junit/junit_plug_with_eclipse.htm"> add</a> the JUnit 4 for unit tests in eclipse in this project .
 
 Run the following command to parse cron expression:
 
-    java -jar Main.jar "CRON_EXPRESSION"
+    java ProjectCronExpression\src\MainClass.java "CRON_EXPRESSION"
 
 For example:
 
-    java -jar Main.jar "*/10 0 1,7 * 2-6 /user/local/msdn.sh"
+   java ProjectCronExpression\src\MainClass.java "*/10 0 1,7 * 2-6 /user/local/msdn.sh"
+
+For Running the unit tests cases 
+First Compile
+    javac -cp junit-4.12.jar;. ProjectCronExpression\src\Test1.java
+To Execute 
+    java -cp junit-4.12.jar;hamcrest.jar;. org.junit.runner.JUnitCore ProjectCronExpression\src\Test1
