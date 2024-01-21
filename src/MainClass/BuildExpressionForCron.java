@@ -126,7 +126,9 @@ public class BuildExpressionForCron {
 					
 			}
 		}
-	
+	      if(cronExp.length() == 0 )
+			throw new Exception(interv[0] + " value should be less then the accepted value for field "+cronField.getName());
+		
 		return cronExp.toString();
 	}
 
