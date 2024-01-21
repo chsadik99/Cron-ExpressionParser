@@ -21,9 +21,9 @@ Note that the weekdays numbering starts from 0 and the first weekday is Sunday
 
 Your system should have java with version >= 11.0.13 & Java(TM) SE Runtime Environment >= 18.9
 
-Running the parser (Given the Main.jar file which can be used to run the cron Expression if you have java SE >=18.9)
+<h1>Running the parser</h1> (Given the Main.jar file which can be used to run the cron Expression if you have java SE >=18.9)
 
-How to create the Jar file using Eclipse =>  <a href="https://help.eclipse.org/latest/index.jsp?topic=%2Forg.eclipse.jdt.doc.user%2Ftasks%2Ftasks-37.htm">
+How to <a href="https://help.eclipse.org/latest/index.jsp?topic=%2Forg.eclipse.jdt.doc.user%2Ftasks%2Ftasks-37.htm"> create </a> the Jar file using Eclipse =
 Also please add the JUnit 4 for unit tests => https://www.tutorialspoint.com/junit/junit_plug_with_eclipse.htm
 
 Run the following command to parse cron expression:
